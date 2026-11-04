@@ -112,6 +112,13 @@ make val  WEIGHTS=models/best.pt
 make test WEIGHTS=models/best.pt
 ```
 
+**Static dashboard (for Netlify or any static host).** Streamlit needs a Python server, which Netlify does not
+run. `make static` (or `python scripts/build_static.py`) builds `web/index.html`, a self-contained copy of the
+dashboard generated from the same `results/` files (same numbers, same simulated/modelled labels, no external
+scripts). The JavaScript p-chart was checked against `src/spc.py` for every baseline setting on the slider.
+On Netlify: base directory `cv-inspection`, no build command, publish directory `web` (set in `netlify.toml`).
+It shows the saved results only; it does not run the model.
+
 Free options: everything runs on a laptop CPU. A free Google Colab GPU should shorten training (not tested here).
 
 ## Layout
@@ -121,6 +128,7 @@ src/        prepare_data, baseline_svm, train_yolo, evaluate, detection_delay, m
 src/config.py   every assumption in one file
 app/dashboard.py   Streamlit app: process monitor, model performance, impact model
 scripts/get_data.sh   fetches NEU-DET at a pinned commit (not redistributed here)
+scripts/build_static.py   builds the static dashboard in web/ (what Netlify serves)
 results/    metrics, sweeps, simulation outputs, figures
 models/     best.pt
 tests/      unit tests

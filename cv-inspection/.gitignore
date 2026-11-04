@@ -17,3 +17,6 @@ yolo*.pt
 
 # local scratch
 results/error_analysis/
+
+# Netlify CLI link state
+.netlify

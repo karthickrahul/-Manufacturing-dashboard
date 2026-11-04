@@ -4,7 +4,7 @@ WEIGHTS ?= runs/detect/neu_n_224/weights/best.pt
 IMGSZ ?= 224
 RECALL_TARGET ?= 0.98
 
-.PHONY: all data prepare baseline train val test delay stream impact dashboard test-units clean-results
+.PHONY: all data prepare baseline train val test delay stream impact dashboard static test-units clean-results
 
 all: data prepare baseline train val test delay stream impact
 
@@ -39,6 +39,10 @@ impact:
 
 dashboard:
 	streamlit run app/dashboard.py
+
+# Static copy of the dashboard for hosts without a Python server (Netlify, GitHub Pages): web/index.html
+static:
+	$(PY) scripts/build_static.py
 
 test-units:
 	$(PY) -m pytest -q tests
