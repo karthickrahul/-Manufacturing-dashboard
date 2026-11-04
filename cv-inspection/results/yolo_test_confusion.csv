@@ -1,0 +1,8 @@
+,pred_crazing,pred_inclusion,pred_patches,pred_pitted_surface,pred_rolled-in_scale,pred_scratches,pred_none
+true_crazing,40,0,1,0,0,0,4
+true_inclusion,0,45,0,0,0,0,0
+true_patches,0,0,45,0,0,0,0
+true_pitted_surface,0,0,0,45,0,0,0
+true_rolled-in_scale,0,0,0,0,44,0,1
+true_scratches,0,1,0,0,0,44,0
+true_none,0,0,0,0,0,0,0

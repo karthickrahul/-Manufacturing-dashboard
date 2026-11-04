@@ -1,0 +1,10 @@
+{
+  "name": "neu_n_224",
+  "model": "yolo11n.pt",
+  "imgsz": 224,
+  "epochs_requested": 40,
+  "batch": 16,
+  "device": "cpu",
+  "flipud": 0.0,
+  "train_minutes": 47.0
+}

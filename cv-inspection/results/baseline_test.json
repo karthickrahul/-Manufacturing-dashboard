@@ -1,0 +1,16 @@
+{
+  "best_setting": {
+    "clahe": false,
+    "C": 10.0,
+    "gamma": "scale"
+  },
+  "test_accuracy": 0.9629629629629629,
+  "per_class_recall": {
+    "crazing": 1.0,
+    "inclusion": 0.9555555555555556,
+    "patches": 0.9111111111111111,
+    "pitted_surface": 1.0,
+    "rolled-in_scale": 1.0,
+    "scratches": 0.9111111111111111
+  }
+}
