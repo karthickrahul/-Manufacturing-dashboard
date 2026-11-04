@@ -1,0 +1,36 @@
+{
+  "ai": {
+    "mean_delay_batches": 1.869,
+    "median_delay_batches": 1.0,
+    "p90_delay_batches": 5.0,
+    "mean_delay_hours": 1.1961600000000001,
+    "censored_share": 0.0,
+    "pre_shift_false_alarm_share": 0.06266666666666666
+  },
+  "manual_full": {
+    "mean_delay_batches": 1.9463333333333332,
+    "median_delay_batches": 1.0,
+    "p90_delay_batches": 5.0,
+    "mean_delay_hours": 1.2456533333333335,
+    "censored_share": 0.0,
+    "pre_shift_false_alarm_share": 0.072
+  },
+  "manual_sample": {
+    "mean_delay_batches": 10.705666666666668,
+    "median_delay_batches": 7.0,
+    "p90_delay_batches": 30.0,
+    "mean_delay_hours": 6.851626666666667,
+    "censored_share": 0.107,
+    "pre_shift_false_alarm_share": 0.14966666666666667
+  },
+  "assumptions": {
+    "P0": 0.03,
+    "P1": 0.07,
+    "batch_size": 200,
+    "manual_sample": 20,
+    "miss_manual": 0.2,
+    "false_alarm_ai": 0.02,
+    "false_alarm_manual": 0.01,
+    "runs_per_strategy": 3000
+  }
+}

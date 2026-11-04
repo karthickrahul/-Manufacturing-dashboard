@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# dataset: not redistributed, fetched by scripts/get_data.sh
+data/
+datasets/
+
+# training artefacts (only the final nano model is committed, in models/)
+runs/
+logs/
+*.pt
+yolo*.pt
+!models/best.pt
+
+# local scratch
+results/error_analysis/
